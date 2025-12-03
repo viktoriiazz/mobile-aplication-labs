@@ -1,17 +1,29 @@
 package com.lab3.data
 
-/**
- * ItemsData - singleton class (only one instance) can be the example of shared data source
- * You can get the data from this ItemsData object from any place in the code.
- */
-object ItemsData {
-    // Static list with the items of Item
-    val itemsList: List<Item> = listOf(
-        Item(1, "Title 1", "Description 1"),
-        Item(2, "Title 2", "Description 2"),
-        Item(3, "Title 3", "Description 3"),
-    )
-}
+data class Place(
+    val id: Int,
+    val title: String,
+    val description: String,
+    val imageUrl: String
+)
 
-// Item class
-class Item(val id: Int, val title: String, val description: String)
+val places = listOf(
+    Place(
+        id = 1,
+        title = "Львів — Площа Ринок",
+        description = "Історичний центр Львова.",
+        imageUrl = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Market_Square_Lviv.jpg"
+    ),
+    Place(
+        id = 2,
+        title = "Кам'янець-Подільська фортеця",
+        description = "Стара українська фортеця.",
+        imageUrl = "https://upload.wikimedia.org/wikipedia/commons/6/62/Kamenets_Podolsky_Castle.jpg"
+    ),
+    Place(
+        id = 3,
+        title = "Одеський оперний театр",
+        description = "Один із найгарніших театрів Європи.",
+        imageUrl = "https://upload.wikimedia.org/wikipedia/commons/0/0f/Odesa_Opera_2017.jpg"
+    )
+)
