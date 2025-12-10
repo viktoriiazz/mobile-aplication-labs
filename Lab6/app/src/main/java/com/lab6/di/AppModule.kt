@@ -5,10 +5,10 @@ import com.lab6.ui.screens.current.WeatherScreenViewModel
 import com.lab6.ui.screens.forecast.WeatherForecastScreenViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import org.koin.core.module.dsl.viewModel
 
 // Base URL of API
 private const val BASE_URL = "https://api.openweathermap.org"

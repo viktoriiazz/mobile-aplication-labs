@@ -5,4 +5,5 @@ data class WeatherMain(
     val feels_like: Double,
     val pressure: Int,
     val humidity: Int,
+
 )
